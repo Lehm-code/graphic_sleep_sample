@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 const Map<String, Color> ratingColors = {
-  'S': Colors.red,
-  'A': Colors.orange,
-  'B': Colors.yellow,
-  'C': Colors.lightGreen,
-  'D': Colors.green,
-  'E': Colors.grey,
+  '日': Colors.red,
+  '月': Colors.grey,
+  '火': Colors.grey,
+  '水': Colors.grey,
+  '木': Colors.grey,
+  '金': Colors.grey,
+  '土': Colors.blue,
 };
 
 Color getColorForRating(String rating) {

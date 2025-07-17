@@ -48,7 +48,7 @@ class SleepTopChart extends StatelessWidget {
           IntervalMark(
             position: Varset('date') * (Varset('start') + Varset('end')),
             color: ColorEncode(value: Colors.pink),
-            size: SizeEncode(value: 25),
+            size: SizeEncode(value: 30),
           ),
         ],
         axes: [Defaults.horizontalAxis..label = null, Defaults.verticalAxis],

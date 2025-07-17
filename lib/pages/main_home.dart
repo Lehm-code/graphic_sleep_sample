@@ -19,7 +19,7 @@ class MainHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('graphic 睡眠グラフ'), centerTitle: true),
       body: Padding(
-        padding: const EdgeInsets.all(42),
+        padding: const EdgeInsets.only(top: 48, left: 48, right: 12),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,

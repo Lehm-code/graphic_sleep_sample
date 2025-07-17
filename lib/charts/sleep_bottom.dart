@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graphic/graphic.dart';
 import 'package:graphic_sleep_sample/mocks/sleep_mock.dart';
+import 'package:graphic_sleep_sample/theme/colors.dart';
 
 class SleepBottomChart extends StatelessWidget {
   final double bottomHeight;
@@ -48,10 +49,24 @@ class SleepBottomChart extends StatelessWidget {
           IntervalMark(
             position: Varset('date') * (Varset('start') + Varset('end')),
             color: ColorEncode(value: Colors.pink),
-            size: SizeEncode(value: 25),
+            size: SizeEncode(value: 30),
           ),
         ],
-        axes: [Defaults.horizontalAxis, Defaults.verticalAxis],
+        axes: [
+          Defaults.horizontalAxis
+            ..label = LabelStyle(
+              textAlign: TextAlign.center,
+              span: (text) => TextSpan(
+                text: text,
+                style: TextStyle(
+                  color: getColorForRating(text),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          Defaults.verticalAxis,
+        ],
       ),
     );
   }

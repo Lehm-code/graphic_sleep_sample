@@ -1,15 +1,15 @@
 // 睡眠データ
 final List<Map<String, dynamic>> _sleepWeeklyRaw = [
   {'date': '日', 'start': 22, 'end': 4},
-  {'date': '月', 'start': 0, 'end': 5.5},
+  {'date': '月', 'start': 0, 'end': 7},
   {'date': '月', 'start': 19, 'end': 21},
   {'date': '火', 'start': 23.5, 'end': 4},
-  {'date': '火', 'start': 10, 'end': 12},
+  {'date': '火', 'start': 8, 'end': 14},
   {'date': '水', 'start': 1, 'end': 6},
   {'date': '木', 'start': 23, 'end': 4.5},
-  {'date': '木', 'start': 11, 'end': 12},
-  {'date': '木', 'start': 17.5, 'end': 19},
-  {'date': '金', 'start': 0, 'end': 5},
+  {'date': '木', 'start': 11, 'end': 13},
+  {'date': '木', 'start': 16.5, 'end': 20},
+  {'date': '金', 'start': 3, 'end': 10},
   {'date': '土', 'start': 1, 'end': 3},
   {'date': '土', 'start': 5, 'end': 8},
 ];
